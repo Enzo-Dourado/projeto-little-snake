@@ -6,26 +6,23 @@ import os
 
 os.system('cls')
 
-# C:\Users\enzod\Desktop\PenDrive\Senai-Python\Outros\PyGame\Jogo_02-Cobrinha
-# ..\Caminho-até-o-local\arquivo
-
 pygame.init()
 
 # Musica
 
-musica = pygame.mixer.music.load("..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\music\Castlevania - Vampire Killer (Courtyard).mp3")
+musica = pygame.mixer.music.load("assets\music\Castlevania - Vampire Killer (Courtyard).mp3")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
 
 # Barulho Colisão
 
-som_colisao = pygame.mixer.Sound("..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\music\smw_kick.wav")
+som_colisao = pygame.mixer.Sound("assets\music\smw_kick.wav")
 som_colisao.set_volume(0.6)
 
 
 # Barulho Morte
 
-morte = pygame.mixer.Sound("..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\music\Super Mario Bros - game over song.wav")
+morte = pygame.mixer.Sound("assets\music\Super Mario Bros - game over song.wav")
 morte.set_volume(0.1)
 
 # Janela
@@ -118,10 +115,10 @@ pausado = False
 # img_cobra = pygame.transform.scale(img_cobra, (tam_snake, alt_snake))
 
 # Maçãs e bomba
-img_maca = pygame.image.load("..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\img\maca_vermelha_formatada.png")
-img_maca_dourada = pygame.image.load('..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\img\maca_dourada.png')
-img_maca_preta = pygame.image.load('..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\img\maca_preta_formatada.png')
-img_bomba = pygame.image.load('..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\img/bomba.png')
+img_maca = pygame.image.load("assets\img\maca_vermelha_formatada.png")
+img_maca_dourada = pygame.image.load('assets\img\maca_dourada.png')
+img_maca_preta = pygame.image.load('assets\img\maca_preta_formatada.png')
+img_bomba = pygame.image.load('assets\img/bomba.png')
 
 # Tamanhos maçãs e bomba
 img_maca = pygame.transform.scale(img_maca, (27, 27))
@@ -130,7 +127,7 @@ img_maca_preta = pygame.transform.scale(img_maca_preta, (27, 27))
 img_bomba = pygame.transform.scale(img_bomba, (40, 40))
 # Fundo
 
-grama_fundo = pygame.image.load('..\Jogo-Cobrinha-Enzo-Dourado\projeto-little-snake/assets\img\grama_02.jpg') # Carrega a imagem da url
+grama_fundo = pygame.image.load('assets\img\grama_02.jpg') # Carrega a imagem da url
 grama = pygame.transform.scale(grama_fundo, (larg, alt)) # Ajusta a imagem ao tamanho da tela [MUDAR PARA grama_meu_not]
 
 # Movimentação
