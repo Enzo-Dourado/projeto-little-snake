@@ -6,9 +6,6 @@ import os
 
 os.system('cls')
 
-# C:\Users\enzod\Desktop\PenDrive\Senai-Python\Outros\PyGame\Jogo_02-Cobrinha
-# ..\Caminho-até-o-local\arquivo
-
 pygame.init()
 
 # Musica
