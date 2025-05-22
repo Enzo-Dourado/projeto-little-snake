@@ -324,8 +324,6 @@ def aumentar_velocidade():
     if pontos > 70:
         velocidade =  15  
 
-    if pontos >= 90:
-        velocidade = 20
 
 # Comer Maçã dourada
 
@@ -397,7 +395,7 @@ def pause():
         pygame.draw.rect(tela, (0, 0, 255), (x_cobra, y_cobra, tamanho_cobra, altura_cobra))
 
         # Maçãs na tela
-        tela.blit(img_maca, (x_maca - 10, y_maca - 10))
+        tela.blit(img_maca, (x_maca, y_maca))
         if pontos % 6 == 0 and pontos != 0:
             aparecer_golden_apple()
 
